@@ -1,0 +1,82 @@
+.App {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin: 1rem;
+  border: dotted 1px #666;
+  box-sizing: border-box;
+}
+/* my css styles */
+.Header {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgoldenrodyellow;
+  padding: 0 1rem;
+}
+.Content {
+  display: flex;
+  justify-content: center;
+  background-color: lightblue;
+  height: 300px;
+}
+.Content h1 {
+  margin: auto;
+}
+.Footer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  background-color: lightpink;
+  padding: 0 1rem;
+}
+.Footer p {
+  text-align: center;
+}
+.Logo {
+  display: flex;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+
+}
+.Menu {
+  display: flex;
+}
+.Menu-link {
+  padding: 1.5rem;
+}
+/* end of my css styles */
+
+
+
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
