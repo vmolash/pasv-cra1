@@ -5,7 +5,16 @@
   border: dotted 1px #666;
   box-sizing: border-box;
 }
+input {
+  width: 200px;
+  min-height: 25px;
+}
+button {
+  width: 100px;
+  margin-top: 10px;
+}
 /* my css styles */
+
 .Header {
   display: flex;
   justify-content: space-between;
@@ -14,21 +23,33 @@
 }
 .Content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: lightblue;
   height: 300px;
+  padding: 20px;
 }
 .Content h1 {
   margin: auto;
 }
 .Footer {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: repeat(4, auto);
   background-color: lightpink;
   padding: 0 1rem;
 }
+.Footer .Menu {
+  flex-direction: column;
+  padding: 10px;
+}
+.Footer .Menu-link {
+  padding: 10px;
+}
 .Footer p {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .Logo {
   display: flex;
@@ -42,6 +63,7 @@
 }
 .Menu-link {
   padding: 1.5rem;
+  text-decoration: none;
 }
 /* end of my css styles */
 
